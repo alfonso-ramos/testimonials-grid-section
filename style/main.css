@@ -1,37 +1,92 @@
 :root {
-    --violet: hsl(263, 55%, 52%);
+    --violet: #733FC8;
     --grayish-blue: hsl(217, 19%, 35%);
     --blackish-blue: hsl(219, 29%, 14%);
     --Light-gray: hsl(0, 0%, 81%);
-    --violLight-grayish-blue: hsl(210, 46%, 95%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
 }
-html{
+
+html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 62.5%;
 }
-*,*:before,*:after{
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-body{
+
+body {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 1.3rem;
     line-height: 2rem;
+    background-color: var(--Light-grayish-blue);
 }
+
+p {
+    margin: 0;
+}
+
 /* Globales */
-.container{
+.container {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-img{
-    max-width: 100%;
+.card {
+    border-radius: 0.8rem;
+    margin-bottom: 2.4rem;
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+    -webkit-box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.24);
+    box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.24);
 }
-@media (min-width: 1440){
 
+.card1 {
+    background-color: var(--violet);
+    color: white;
 }
+
+.card1 img {
+    border: solid #A775F1 2px;
+}
+
+.card2 {
+    background-color: var(--grayish-blue);
+    color: white;
+}
+
+.card3,
+.card5 {
+    background-color: white;
+}
+
+.card4 {
+    background-color: var(--blackish-blue);
+    color: white;
+}
+
+.card4 img {
+    border: solid var(--violet) 2px;
+}
+
+.card-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.card-profile-image img {
+    width: 2.8rem;
+    border-radius: 100%;
+}
+
+@media (min-width: 1440) {}
