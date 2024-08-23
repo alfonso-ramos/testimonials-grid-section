@@ -168,7 +168,7 @@ p {
 
         top: 2px;
         right: 80px;
-        background-image: url('/images/bg-pattern-quotation.svg');
+        background-image: url('../images/bg-pattern-quotation.svg');
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 1;
