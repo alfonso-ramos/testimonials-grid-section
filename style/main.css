@@ -1,0 +1,37 @@
+:root {
+    --violet: hsl(263, 55%, 52%);
+    --grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --violLight-grayish-blue: hsl(210, 46%, 95%);
+}
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+/* Globales */
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+@media (min-width: 1440){
+
+}
