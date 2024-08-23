@@ -37,17 +37,17 @@ p {
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
+.card-container {
+    margin-top: 7rem;
 }
 
 .card {
     border-radius: 0.8rem;
     margin-bottom: 2.4rem;
     padding: 2.6rem 3.2rem 3.2rem 3.2rem;
-    -webkit-box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.24);
     box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.24);
+    position: relative;
+    overflow: hidden;
 }
 
 .card1 {
@@ -82,6 +82,8 @@ a {
     display: flex;
     align-items: center;
     gap: 1.7rem;
+    height: 2.8rem;
+    margin-bottom: 1.8rem;
 }
 
 .card-profile-image img {
@@ -89,4 +91,88 @@ a {
     border-radius: 100%;
 }
 
-@media (min-width: 1440) {}
+.verified {
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+.profile-name {
+    font-size: 1.3rem;
+}
+
+.testimonial {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    z-index: 2;
+    position: relative;
+}
+
+.quote {
+    font-size: 1.3rem;
+    opacity: 0.7;
+    margin-top: 1.6rem;
+    z-index: 2;
+    position: relative;
+}
+
+
+.decorative-image {
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    background-image: url('/images/bg-pattern-quotation.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: 10rem;
+    width: 10rem;
+}
+
+@media (min-width: 1440px) {
+    .card {
+        margin: 0;
+    }
+
+    .card1 {
+        grid-area: first;
+    }
+
+    .card2 {
+        grid-area: second;
+    }
+
+    .card3 {
+        grid-area: third;
+    }
+
+    .card4 {
+        grid-area: fourth;
+    }
+
+    .card5 {
+        grid-area: fifth;
+    }
+
+    .card-container {
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "first first second fifth"
+            "third fourth fourth fifth";
+        gap: 3rem;
+    }
+    .decorative-image {
+
+        top: 2px;
+        right: 80px;
+        background-image: url('/images/bg-pattern-quotation.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        height: 10rem;
+        width: 10rem;
+    }
+}
